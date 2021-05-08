@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack {
+                NavigationLink("菜单 Menu", destination: MenuView())
+            }
+            
+        }
     }
 }
 
